@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/rlAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="monospace"
+                android:text="KERETA KITA"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="profileMenu"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="23dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgProfile"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="PROFILE"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="historyMenu"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgBooking"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="23dp"
+                    android:src="@drawable/history" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgBooking"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="HISTORY"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="bookKereta"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgHistory"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="23dp"
+                    android:src="@drawable/kereta" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgHistory"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="BOOKING KERETA"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="aboutUs"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFeedback"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="23dp"
+                    android:src="@drawable/feedback" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgFeedback"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="ABOUT US"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sign Out"
+        android:textSize="16sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="@color/blue"
+        app:cornerRadius="50dp" />
+
+</LinearLayout>
